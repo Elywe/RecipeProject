@@ -5,10 +5,9 @@ class Ingredient {
     private $id;
     private $name;
 
-    function __construct($data) {
-        foreach ($data as $k => $v) {
-            $this->$k = $v;
-        }
+    function __construct($id, $name) {
+        $this->id = $id;
+        $this->name = $name;
     }
 
     function getId() {

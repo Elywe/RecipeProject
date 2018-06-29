@@ -1,3 +1,4 @@
+
 <?php
 
 include_once('Category.php');
@@ -5,7 +6,7 @@ include_once('Ingredient.php');
 include_once('Recipe.php');
 include_once('Step.php');
 
-Class Manager {
+Class RecipeDAO {
 
     private $db;
 
@@ -39,7 +40,7 @@ Class Manager {
         $query->bindValue(':id', $idRecipe);
         $query->execute();
         while ($data = $query->fetch(PDO::FETCH_ASSOC)) {
-            $ingredients[] = new Ingredient($data);
+            $ingredients[] = new Ingredient($data["id"], $data["name"]);
         }
         return $ingredients;
     }
