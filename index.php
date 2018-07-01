@@ -1,8 +1,12 @@
 <?php
+/* include_once 'Controller/RecipeController.php';
+  include_once './View/ViewHeader.php';
+  $controller = new RecipeController();
+  $controller->listRecipes(); */
+
 
 include_once 'Controller/RecipeController.php';
 include_once './View/ViewHeader.php';
-
 
 if ($_GET["controller"] == "recipe") {
     $controller = new RecipeController();
@@ -16,3 +20,5 @@ if ($_GET["controller"] == "recipe") {
 } else {
     include 'View/notFound.php';
 }
+?>
+<script src = "Script/script.js"></script>

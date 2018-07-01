@@ -12,6 +12,10 @@ h1{
 	margin-top: 0;
 }
 
+nav{
+	background-color: #4ba2c6;
+}
+
 placeholder{
 	font-style: italic;
 	padding-top: 1em;
@@ -26,8 +30,15 @@ placeholder{
 	margin-left: 2em;
 }
 
-.pagination li.active{
+/*add button*/
+.btn-floating i{
+	color:black;
+}
+
+/*page numbers*/
+.pagination li.active a{
 	background-color: #ffee58;
+	color: black;
 }
 
 .cards{
@@ -37,12 +48,13 @@ placeholder{
 
 .colorAdd{
 	background-color: #ffee58;
+
 }
 
 .colorAdd:hover{
 	background-color: #c9bc1f;
-}
 
+}
 
 .card-title:hover{
 	background-color: black;
@@ -52,20 +64,28 @@ placeholder{
 .card-title{
 	width: 220.81px;
 	font-size: 10px;
+
+	text-shadow: 1px 1px 1px black;
 }
 
 a{
 	color:white;
 }
 
-textAreaAdd::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	font-style: italic;
-}
-
 .input-field input[type=text]:focus {
 	border-bottom: 1px solid #81d3f9 !important;
 	box-shadow: 0 1px 0 0 #81d3f9 !important;
 	opacity: 0.50;
+}
+
+.container{
+
+}
+
+#textAreaAdd:focus {
+    outline: none !important;
+    border:1px solid #81d3f9;
+    box-shadow: 0 0 1px #81d3f9;
 }
 
 .input-field input[type=text]:focus + label {
